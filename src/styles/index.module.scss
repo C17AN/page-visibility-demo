@@ -1,0 +1,41 @@
+.backdrop {
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    z-index: 0;
+
+    &.watched {
+        display: none;
+    }
+}
+
+.adNavigator {
+    background-color: #2365d8;
+    color: #fff;
+    display: inline-flex;
+    padding: 24px 24px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.contents {
+    padding: 24px;
+    list-style-position: inside;
+
+    & > li {
+        margin-bottom: 12px;
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
